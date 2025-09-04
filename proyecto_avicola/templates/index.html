@@ -13,7 +13,7 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body id="home">
 
@@ -60,7 +60,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="card-real">
-                        <img src="../static/img/pollos_12-15.png" alt="Pollos de 12-15 días listos para engorde">
+                        <img src="{{ url_for('static', filename='img/pollos_12-15.png') }}" alt="Pollos de 12-15 días listos para engorde">
                         <div class="card-body">
                             <h5 class="card-title">Edad: 12-15 días</h5>
                             <p class="card-text">Peso promedio 320-380 g. Esquema de vacunas completo (Gumboro, bronquitis, Newcastle).</p>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card-real">
-                        <img src="../static/img/galpon_bioseguridad.png" alt="Instalaciones limpias y controladas">
+                        <img src="{{ url_for('static', filename='img/galpon_bioseguridad.png') }}" alt="Instalaciones limpias y controladas">
                         <div class="card-body">
                             <h5 class="card-title">Bioseguridad garantizada</h5>
                             <p class="card-text">Criados en galpones limpios, con control de temperatura y ventilación óptima.</p>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card-real">
-                        <img src="../static/img/transporte.png" alt="Transporte seguro a tu finca">
+                        <img src="{{ url_for('static', filename='img/transporte.png') }}" alt="Transporte seguro a tu finca">
                         <div class="card-body">
                             <h5 class="card-title">Entrega incluida</h5>
                             <p class="card-text">Transporte hasta tu finca en Ríofrío y municipios cercanos.</p>
@@ -148,13 +148,13 @@
             <h2 class="section-title">Galería</h2>
             <div class="row g-3">
                 <div class="col-md-4">
-                    <img src="../static/img/pollo.png" class="img-fluid rounded" alt="Revisión veterinaria de pollos">
+                    <img src="{{ url_for('static', filename='img/pollo.png') }}" class="img-fluid rounded" alt="Revisión veterinaria de pollos">
                 </div>
                 <div class="col-md-4">
-                    <img src="../static/img/pollos_galpon.png" class="img-fluid rounded" alt="Pollos de 12-15 días sanos">
+                    <img src="{{ url_for('static', filename='img/pollos_galpon.png') }}" class="img-fluid rounded" alt="Pollos de 12-15 días sanos">
                 </div>
                 <div class="col-md-4">
-                    <img src="../static/img/gapones.png" class="img-fluid rounded" alt="Galpón limpio y ventilado">
+                    <img src="{{ url_for('static', filename='img/galpones.png') }}" class="img-fluid rounded" alt="Galpón limpio y ventilado">
                 </div>
             </div>
         </div>
@@ -192,6 +192,6 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- JS -->
-    <script src="../js/script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
